@@ -2,4 +2,9 @@
 
 cd $(dirname $0)
 
-./vendor/apigen/apigen/bin/apigen generate -s ../tilmeld-server/ -d ./api/server/$1/ --exclude vendor/ --exclude setup/ --exclude bower_components/ --exclude node_modules/ --title "Tilmeld $1 Server API" --tree --main Tilmeld
+mkdir build
+./vendor/bin/phploc --log-xml=build/phploc.xml ../tilmeld-server/src/
+
+cat phpdox.xml.dist.skel | sed -e "s/--version--/$1/" > phpdox.xml.dist
+./vendor/bin/phpdox
+rm phpdox.xml.dist

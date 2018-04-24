@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Tilmeld\Tilmeld</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.html">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html#Tilmeld">Tilmeld</a>
+          </li>
+          <li class="separator">Tilmeld</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Tilmeld.php.html#line19">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Tilmeld\</small>Tilmeld</h1>
+        <h4>Tilmeld main class.</h4>
+        <p>Provides an Nymph based user and group manager.</p>
+        <ul>
+          <li>Author: Hunter Perrin &lt;hperrin@gmail.com&gt;</li>
+          <li>Copyright: SciActive.com</li>
+          <li>License: https://www.apache.org/licenses/LICENSE-2.0</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Tilmeld
+            {<br/><ul class="none"><li>// constants</li><li>const VERSION = '1.0.0-beta.1';</li><li>const NO_ACCESS = 0;</li><li>const READ_ACCESS = 1;</li><li>const WRITE_ACCESS = 2;</li><li>const DELETE_ACCESS = 4;</li></ul><ul class="none"><li>// members</li><li>public static  <a href="#members">$config</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public static bool <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/gatekeeper.html">gatekeeper</a>()
+                    </li><li>public static void <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/configure.html">configure</a>()
+                    </li><li>public static void <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/addAccessControlSelectors.html">addAccessControlSelectors</a>()
+                    </li><li>public static bool <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/checkPermissions.html">checkPermissions</a>()
+                    </li><li>public static void <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/fillSession.html">fillSession</a>()
+                    </li><li>public static bool <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/login.html">login</a>()
+                    </li><li>public static void <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/logout.html">logout</a>()
+                    </li><li>public static void <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/session.html">session</a>()
+                    </li><li>public static void <a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/groupSort.html">groupSort</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="VERSION">VERSION</td>
+              <td>'1.0.0-beta.1'</td>
+            </tr>
+            <tr>
+              <td id="NO_ACCESS">NO_ACCESS</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td id="READ_ACCESS">READ_ACCESS</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td id="WRITE_ACCESS">WRITE_ACCESS</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td id="DELETE_ACCESS">DELETE_ACCESS</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="config"><strong>$config</strong>
+                —
+                array<br/><span class="indent">The Tilmeld config array.</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="addAccessControlSelectors"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/addAccessControlSelectors.html">addAccessControlSelectors()</a>
+                — Add selectors to a list of options and selectors which will limit results to only entities the currently logged in user has access to.</li>
+            <li id="checkPermissions"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/checkPermissions.html">checkPermissions()</a>
+                — Check an entity's permissions for the currently logged in user.</li>
+            <li id="configure"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/configure.html">configure()</a>
+                — Apply configuration to Tilmeld.</li>
+            <li id="fillSession"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/fillSession.html">fillSession()</a>
+                — Fill the $_SESSION['tilmeldUser'] variable with the logged in user's data.</li>
+            <li id="gatekeeper"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/gatekeeper.html">gatekeeper()</a>
+                — Check to see if the current user has an ability.</li>
+            <li id="groupSort"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/groupSort.html">groupSort()</a>
+                — Sort an array of groups hierarchically.</li>
+            <li id="login"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/login.html">login()</a>
+                — Logs the given user into the system.</li>
+            <li id="logout"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/logout.html">logout()</a>
+                — Logs the current user out of the system.</li>
+            <li id="session"><a title="Tilmeld\Tilmeld" href="../classes/Tilmeld_Tilmeld/session.html">session()</a>
+                — Open, close, or destroy sessions.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2018 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

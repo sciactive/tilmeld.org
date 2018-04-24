@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Tilmeld\Entities\Group</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.html">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.html">Namespaces</a>
+        </li>
+        <li>
+          <a href="../classes.html">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.html">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.html">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.html#Tilmeld_Entities">Tilmeld\Entities</a>
+          </li>
+          <li class="separator">Group</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/Entities/Group.php.html#line36">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>Tilmeld\Entities\</small>Group</h1>
+        <h4>Group class.</h4>
+        <p>Note: When delete() is called all descendants of this group will also be<br/>deleted.</p>
+        <ul>
+          <li>Author: Hunter Perrin &lt;hperrin@gmail.com&gt;</li>
+          <li>Copyright: SciActive.com</li>
+          <li>License: https://www.apache.org/licenses/LICENSE-2.0</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Group
+                extends <a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject.html">AbleObject</a>
+            {<br/><ul class="none"><li>// constants</li><li>const ETYPE = 'tilmeld_group';</li><li>const DEFAULT_PRIVATE_DATA = ;</li><li>const DEFAULT_WHITELIST_DATA = ;</li></ul><ul class="none"><li>// members</li><li>protected array <a href="#members">$tags</a> =
+                        ;
+                    </li><li>public array <a href="#members">$clientEnabledMethods</a> =
+                        ;
+                    </li><li>public static array <a href="#members">$clientEnabledStaticMethods</a> =
+                        ;
+                    </li><li>protected <a href="#members">$privateData</a> =
+                        Group::DEFAULT_PRIVATE_DATA;
+                    </li><li>public static <a href="#members">$searchRestrictedData</a> =
+                        Group::DEFAULT_PRIVATE_DATA;
+                    </li><li>protected <a href="#members">$whitelistData</a> =
+                        Group::DEFAULT_WHITELIST_DATA;
+                    </li><li>protected array <a href="#members">$whitelistTags</a> =
+                        ;
+                    </li><li>private <span title="Tilmeld\Entities\bool">bool</span> <a href="#members">$skipAcWhenSaving</a> =
+                        false;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/__construct.html">__construct</a>()
+                    </li><li>public static array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getPrimaryGroups.html">getPrimaryGroups</a>()
+                    </li><li>public static array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getSecondaryGroups.html">getSecondaryGroups</a>()
+                    </li><li>private static void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getAssignableGroups.html">getAssignableGroups</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getAvatar.html">getAvatar</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/putData.html">putData</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/updateDataProtection.html">updateDataProtection</a>()
+                    </li><li>public bool <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/isDescendant.html">isDescendant</a>()
+                    </li><li>public array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getChildren.html">getChildren</a>()
+                    </li><li>public array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getDescendants.html">getDescendants</a>()
+                    </li><li>public int <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getLevel.html">getLevel</a>()
+                    </li><li>public array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getUsers.html">getUsers</a>()
+                    </li><li>public array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/checkGroupname.html">checkGroupname</a>()
+                    </li><li>public array <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/checkEmail.html">checkEmail</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/save.html">save</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/saveSkipAC.html">saveSkipAC</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/tilmeldSaveSkipAC.html">tilmeldSaveSkipAC</a>()
+                    </li><li>public void <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/delete.html">delete</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="Tilmeld\Entities\AbleObject">AbleObject</span></li><li>public void <a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject/grant.html">grant</a>()
+                        </li><li>public void <a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject/revoke.html">revoke</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject.html">Tilmeld\Entities\AbleObject</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="ETYPE">ETYPE</td>
+              <td>'tilmeld_group'</td>
+            </tr>
+            <tr>
+              <td id="DEFAULT_PRIVATE_DATA">DEFAULT_PRIVATE_DATA</td>
+              <td/>
+            </tr>
+            <tr>
+              <td id="DEFAULT_WHITELIST_DATA">DEFAULT_WHITELIST_DATA</td>
+              <td/>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>private</h4>
+          <ul class="members">
+            <li id="skipAcWhenSaving"><strong>$skipAcWhenSaving</strong>
+                —
+                <a title="Tilmeld\Entities\bool" href="../classes/Tilmeld_Entities_bool.html">Tilmeld\Entities\bool</a><br/><span class="indent">This is explicitly used only during the registration proccess.</span></li>
+          </ul>
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="privateData">
+              <strong>$privateData</strong>
+            </li>
+            <li id="tags">
+              <strong>$tags</strong>
+            </li>
+            <li id="whitelistData">
+              <strong>$whitelistData</strong>
+            </li>
+            <li id="whitelistTags">
+              <strong>$whitelistTags</strong>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="clientEnabledMethods">
+              <strong>$clientEnabledMethods</strong>
+            </li>
+            <li id="clientEnabledStaticMethods">
+              <strong>$clientEnabledStaticMethods</strong>
+            </li>
+            <li id="searchRestrictedData">
+              <strong>$searchRestrictedData</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="getAssignableGroups">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getAssignableGroups.html">getAssignableGroups()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/__construct.html">__construct()</a>
+                — Load a group.</li>
+            <li id="checkEmail"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/checkEmail.html">checkEmail()</a>
+                — Check that an email is unique.</li>
+            <li id="checkGroupname"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/checkGroupname.html">checkGroupname()</a>
+                — Check that a groupname is valid.</li>
+            <li id="delete">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/delete.html">delete()</a>
+            </li>
+            <li id="getAvatar">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getAvatar.html">getAvatar()</a>
+            </li>
+            <li id="getChildren"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getChildren.html">getChildren()</a>
+                — Gets an array of the group's child groups.</li>
+            <li id="getDescendants"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getDescendants.html">getDescendants()</a>
+                — Gets an array of the group's descendant groups.</li>
+            <li id="getLevel"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getLevel.html">getLevel()</a>
+                — Get the number of parents the group has.</li>
+            <li id="getPrimaryGroups"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getPrimaryGroups.html">getPrimaryGroups()</a>
+                — Get all the groups that can be assigned as primary groups.</li>
+            <li id="getSecondaryGroups"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getSecondaryGroups.html">getSecondaryGroups()</a>
+                — Get all the groups that can be assigned as secondary groups.</li>
+            <li id="getUsers"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/getUsers.html">getUsers()</a>
+                — Gets an array of users in the group.</li>
+            <li id="isDescendant"><a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/isDescendant.html">isDescendant()</a>
+                — Check whether the group is a descendant of a group.</li>
+            <li id="putData">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/putData.html">putData()</a>
+            </li>
+            <li id="save">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/save.html">save()</a>
+            </li>
+            <li id="saveSkipAC">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/saveSkipAC.html">saveSkipAC()</a>
+            </li>
+            <li id="tilmeldSaveSkipAC">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/tilmeldSaveSkipAC.html">tilmeldSaveSkipAC()</a>
+            </li>
+            <li id="updateDataProtection">
+              <a title="Tilmeld\Entities\Group" href="../classes/Tilmeld_Entities_Group/updateDataProtection.html">updateDataProtection()</a>
+            </li>
+          </ul>
+          <h3>Inherited from <a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject.html">Tilmeld\Entities\AbleObject</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="grant"><a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject/grant.html">grant()</a>
+                — Grant an ability.</li>
+            <li id="revoke"><a title="Tilmeld\Entities\AbleObject" href="../classes/Tilmeld_Entities_AbleObject/revoke.html">revoke()</a>
+                — Revoke an ability.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.11.0-dev - Copyright (C) 2010 - 2018 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
