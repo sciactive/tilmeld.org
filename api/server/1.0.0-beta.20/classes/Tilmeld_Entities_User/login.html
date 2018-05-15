@@ -2,7 +2,7 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <title>phpDox - Tilmeld\Tilmeld::session</title>
+    <title>phpDox - Tilmeld\Entities\User::login</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   </head>
@@ -36,12 +36,12 @@
             <a href="../../classes.html">Classes</a>
           </li>
           <li class="separator">
-            <a href="../../classes.html#Tilmeld">Tilmeld</a>
+            <a href="../../classes.html#Tilmeld_Entities">Tilmeld\Entities</a>
           </li>
           <li class="separator">
-            <a title="Tilmeld\Tilmeld" href="../../classes/Tilmeld_Tilmeld.html">Tilmeld</a>
+            <a title="Tilmeld\Entities\User" href="../../classes/Tilmeld_Entities_User.html">User</a>
           </li>
-          <li class="separator">session</li>
+          <li class="separator">login</li>
         </ul>
       </div>
       <nav class="box">
@@ -56,45 +56,26 @@
             <a href="#parameter">Parameter</a>
           </li>
           <li>
-            <a href="../../source/Tilmeld.php.html#line388">Source</a>
+            <a href="../../source/Entities/User.php.html#line440">Source</a>
           </li>
         </ul>
       </nav>
       <section>
-        <h1><small>Tilmeld\Tilmeld::</small>session</h1>
-        <h4>Open, close, or destroy sessions.</h4>
-        <p>Using this method, you can access an existing session for reading or
-writing, and close or destroy it.
-
-Providing a method to open a session for reading allows asynchronous
-calls to the app to work efficiently. PHP will not block during page
-requests, so one page taking forever to load doesn't grind a user's whole
-session to a halt.
-
-This method should be the only method sessions are accessed in 2be.
-This will allow maximum compatibility between components.
-
-$option can be one of the following:
-
-- "read" - Open the session for reading.
-- "write" - Open the session for writing. Remember to close it when you
-  no longer need write access.
-- "close" - Close the session for writing. The session is still readable
-  afterward.
-- "destroy" - Unset and destroy the session.</p>
-        <ul/>
+        <h1><small>Tilmeld\Entities\User::</small>login</h1>
+        <h4/>
+        <p/>
         <h2 id="signature">Signature</h2>
         <div class="styled synopsis">
-          <code>public function session([string
-        $option = 'read'] )
+          <code>public function login(
+        $data )
             </code>
         </div>
         <h2 id="parameterlist">Parameters</h2>
         <dl class="styled">
-          <dt><code>$option</code>
+          <dt><code>$data</code>
                 —
-                string</dt>
-          <dd>The type of access or action requested.</dd>
+                </dt>
+          <dd/>
         </dl>
       </section>
     </div>
