@@ -1,0 +1,16 @@
+DOXYFILE_ENCODING      = UTF-8
+PROJECT_NAME           = "Tilmeld Server API"
+PROJECT_NUMBER         = "--version--"
+PROJECT_BRIEF          = "Nymph user and group management with access controls."
+OUTPUT_DIRECTORY       = "api/server/--version--"
+BRIEF_MEMBER_DESC      = YES
+FULL_PATH_NAMES        = NO
+JAVADOC_AUTOBRIEF      = YES
+TAB_SIZE               = 2
+INPUT                  = ../tilmeld-server/conf ../tilmeld-server/src ../tilmeld-server/README.md
+FILE_PATTERNS          = *.php
+                         *.md
+RECURSIVE              = YES
+SOURCE_BROWSER         = YES
+HTML_OUTPUT            = .
+GENERATE_LATEX         = NO
